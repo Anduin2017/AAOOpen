@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>东北大学教务处 - 开放信息平台</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">东北大学教务处 开放信息平台</h3>
+        </div>
+        <div class="jumbotron" style="margin-top:20px;">
+            <h1>选课系统尚未开启</h1>
+            <p>选课系统遇到了一些问题。这不是程序的故障，也不是性能的不足，而是它影响到了学生学习的公平性。</p>
+            <a href="https://aao.neu.edu.cn" class="btn btn-warning" target="_blank">返回教务处主页</a>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>预计选课开始时间为 2017年9月8日 13：00</p>
+                <hr>
+                <h1>致歉</h1>
+                <p>各位东北大学16级同学们：</p>
+                <p>首先向大家抱以最诚挚的歉意，同时感谢大家在维护过程的这段时间的耐心等待以及关注。</p>
+                <p>本周三下午1点，北京时间9月6日 13：00，部分计划数据设置发生错误，有些学院在频繁修改数据时没有正确设置人数。导致部分课程无法选择。</p>
+                <p>本周三晚上7点，北京时间9月6日 19：10，我们的部分数据在同步时发生故障，导致选课服务器没有正确进行响应。此时选课服务已经工作在严重不稳定的状态。</p>
+                <p>本周四下午1点，北京时间9月7日 13：00，我们的选课分配负载均衡应当按照Cookie进行真实Web服务器分配。但该过程中，由于错误的配置，产生了超过我们预计的等待队列，导致至少3分钟内学生无法登录选课系统，严重影响了用户体验。</p>
+                <p>虽然教务处的工程师已经在事故发生后第一时间内着手抢修，并且紧急要求各个学院检查教学任务设置，重启服务器并尝试修复部分数据，但不幸的是，大量非正常的选课数据已经发生。我们尝试了一些应急方案，但这些尝试均未成功。</p>
+                <p>我们非常理解广大学生焦急的心情，也在事故发生后最初时间内尝试补救。但效果都不理想。在此期间产生了大量选课数据，服务器工作状态已经变得极度不稳定。</p>
+                <p>在尝试了各种解决方案后，东北大学教务处最后综合考虑，决定<b>将体育（三）选课数据回档至事故发生前的状态，也就是2017年9月6日中午。其它课程数据不变。</b>我们需要向大家说明，数据回档是我们最后的无奈的决定，东北大学教务处对于被迫做出这个艰难的决定深表遗憾。</p>
+                <p>数据回档意味着，自事故发生以来所有体育（三）选课结果、退课结果均无法复原。我们一贯重视学生的在校成绩，也珍视学生对东北大学的热爱。由于此次教务处选课系统以来的罕见事故，给很多同学的学习造成了极大的不便。我们对由此给各位学生带来的烦扰，不便以及损失，再次致以诚挚的歉意。我们更将会认真对待这个事件，深度反省和学习此次事故带来的经验，包括更佳的审核和权限设置，更优化的服务检测，以竭力避免此类事件在未来重演。感谢各位同学对我们的理解与支持。</p>
+            </div>
+            <div class="col-md-4">
+                <h3>所谓的“测试”</h3>
+                <p>教务处在最近没有进行过任何所谓的选课测试，参与任何所谓的选课测试都与教务处无关。这可能是学院对于数据操作的错误。我们仍然在继续调查此事。教务处下达的任何通知都会被已文件的形式在网站上公示。其它信息均不代表东北大学教务处。</p>
+            </div>
+            <div class="col-md-4">
+                <h3>情况说明</h3>
+                <p>针对9月6日晚发生的体育课突然能选的情况，是由于部分学院同步部分数据时发生了故障，导致服务器的数据没有被正确更新。这不是任何所谓的“测试”。</p>
+            </div>
+            <div class="col-md-4">
+                <h3>联络信息</h3>
+                <p>针对选课过程中的技术问题，请联络：
+                    <a href="mailto:anduin@aiursoft.com">Anduin@aiursoft.com</a>
+                </p>
+                <p>针对选课内容与教学安排等问题，请联络所在学院教学办。</p>
+                <p>针对选课安排问题，以及举报恶意操作、恶意刷课软件，请致电：
+                    <kdb>024-8368-1251</kdb>
+                </p>
+            </div>
+        </div>
+
+
+        <h3>选课开始倒计时：
+            <code id="demo"></code>
+        </h3>
+        警告：客户端时间。该倒计时的值取决于你的设备时间。因此该倒计时仅供参考。
+        <a class="btn btn-success" href="http://202.118.31.243" target="_blank">进入选课系统</a>
+
+        <hr>
+        <footer class="footer">
+            <p>东北大学教务处</p>
+        </footer>
+    </div>
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sep 8, 2017 13:00:00").getTime();
+        var update = function () {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = hours + "小时 "
+                + minutes + "分 " + seconds + "秒 ";
+
+            // If the count down is finished, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "已经开始选课。";
+            }
+        };
+        update();
+        // Update the count down every 1 second
+        var x = setInterval(update, 1000);
+
+    </script>
+</body>
