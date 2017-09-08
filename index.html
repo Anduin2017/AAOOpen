@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 
 <head>
     <title>东北大学教务处 - 开放信息平台</title>
@@ -46,24 +46,30 @@
                     <a href="mailto:anduin@aiursoft.com">Anduin@aiursoft.com</a>
                 </p>
                 <p>针对选课内容与教学安排等问题，请联络所在学院教学办。</p>
-                <p>针对选课安排问题，以及举报恶意操作、恶意刷课软件，请致电：
+                <p>针对选课安排和其它问题，请致电教务处教学管理科：
                     <kdb>024-8368-1251</kdb>
                 </p>
             </div>
+            <div class="col-md-12">
+                <h3>选课开始倒计时：
+                    <code id="demo"></code>
+                </h3>
+                <p class="text-danger">
+                    警告：该倒计时的值取决于你的设备时间, 仅供参考。
+                </p>
+                <h3>进入选课系统</h3>
+                <a class="btn btn-success" href="https://aao.courseselection.aiursoft.com/" target="_blank">校园网</a>
+                <a class="btn btn-danger" href="http://202.118.31.212:12583/" target="_blank">非校园网</a>
+                <p class="text-danger">非校园网入口将允许任何连入Internet的设备访问选课系统，以便在校外进行选课。注意：该通道不是安全的连接，仅供测试使用。</p>
+            </div>
         </div>
-
-
-        <h3>选课开始倒计时：
-            <code id="demo"></code>
-        </h3>
-        警告：客户端时间。该倒计时的值取决于你的设备时间。因此该倒计时仅供参考。
-        <a class="btn btn-success" href="http://202.118.31.243" target="_blank">进入选课系统</a>
-
         <hr>
         <footer class="footer">
             <p>东北大学教务处</p>
         </footer>
     </div>
+
+
 
     <script src="./bower_components/jquery/dist/jquery.min.js"></script>
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -98,6 +104,5 @@
         update();
         // Update the count down every 1 second
         var x = setInterval(update, 1000);
-
     </script>
 </body>
