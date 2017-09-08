@@ -13,18 +13,18 @@
             <h3 class="text-muted">东北大学教务处 开放信息平台</h3>
         </div>
         <div class="jumbotron" style="margin-top:20px;">
-            <h1>选课系统尚未开启</h1>
-            <p>选课系统遇到了一些问题。这不是程序的故障，也不是性能的不足，而是它影响到了学生学习的公平性。</p>
+            <h1>选课已经开始..</h1>
+            <p>选课系统已经开启，请立即登录选课。</p>
+            <a class="btn btn-success" href="http://aao.courseselection.aiursoft.com/" target="_blank">开始选课</a>
             <a href="https://aao.neu.edu.cn" class="btn btn-warning" target="_blank">返回教务处主页</a>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p>预计选课开始时间为 2017年9月8日 13：00</p>
                 <hr>
                 <h1>致歉</h1>
                 <p>各位东北大学16级同学们：</p>
                 <p>首先向大家抱以最诚挚的歉意，同时感谢大家在维护过程的这段时间的耐心等待以及关注。</p>
-                <p>本周三下午1点，北京时间9月6日 13：00，部分计划数据设置发生错误，有些学院在频繁修改数据时没有正确设置人数。导致部分课程无法选择。</p>
+                <p>本周三下午1点，北京时间9月6日 13：00，部分计划数据设置发生错误，导致部分课程无法选择。</p>
                 <p>本周三晚上7点，北京时间9月6日 19：10，我们的部分数据在同步时发生故障，导致选课服务器没有正确进行响应。此时选课服务已经工作在严重不稳定的状态。</p>
                 <p>本周四下午1点，北京时间9月7日 13：00，我们的选课分配负载均衡应当按照Cookie进行真实Web服务器分配。但该过程中，由于错误的配置，产生了超过我们预计的等待队列，导致至少3分钟内学生无法登录选课系统，严重影响了用户体验。</p>
                 <p>虽然教务处的工程师已经在事故发生后第一时间内着手抢修，并且紧急要求各个学院检查教学任务设置，重启服务器并尝试修复部分数据，但不幸的是，大量非正常的选课数据已经发生。我们尝试了一些应急方案，但这些尝试均未成功。</p>
@@ -39,6 +39,7 @@
             <div class="col-md-4">
                 <h3>情况说明</h3>
                 <p>针对9月6日晚发生的体育课突然能选的情况，是由于部分学院同步部分数据时发生了故障，导致服务器的数据没有被正确更新。这不是任何所谓的“测试”。</p>
+                <p>选课平台的.neu.edu.cn域名尚未通过审批，因此暂时以aiursoft.com域名解析。目前aiursoft.com域名能够代表教务处官方信息。</p>
             </div>
             <div class="col-md-4">
                 <h3>联络信息</h3>
@@ -55,12 +56,20 @@
                     <code id="demo"></code>
                 </h3>
                 <p class="text-danger">
-                    警告：该倒计时的值取决于你的设备时间, 仅供参考。
+                    警告：该倒计时的值取决于你的设备时间， 仅供参考。
                 </p>
-                <h3>进入选课系统</h3>
-                <a class="btn btn-success" href="https://aao.courseselection.aiursoft.com/" target="_blank">校园网</a>
+                <h3>选课系统已经工作于理想稳定状态</h3>
+                <a class="btn btn-success" href="http://aao.courseselection.aiursoft.com/" target="_blank">校园网</a>
                 <a class="btn btn-danger" href="http://202.118.31.212:12583/" target="_blank">非校园网</a>
                 <p class="text-danger">非校园网入口将允许任何连入Internet的设备访问选课系统，以便在校外进行选课。注意：该通道不是安全的连接，仅供测试使用。</p>
+            </div>
+            <div class="col-md-8">
+                <img class="img-responsive" src="Sketch.png">
+                <p>系统压力已经恢复到正常状态.</p>
+            </div>
+            <div class="col-md-12">
+                <h3>针对Chrome浏览器在确认信息时回滚</h3>
+                <p>我们收到了一些反馈， 指出Chrome在登录时会无限回滚， 而其它浏览器却可以登录的问题. 在选课开始时教务处一共有三位学生助理， 他们都成功使用Chrome选到了课程. 我们的测试也没有遇到问题. 总之我们无法重现该故障， 也没有更多线索. 这可能是Chrome对于Cookie处理的原则不同导致的， 但我们仍然无法确认. 我们认为这不影响本次选课的公平性. </p>
             </div>
         </div>
         <hr>
@@ -85,7 +94,7 @@
             // Find the distance between now an the count down date
             var distance = countDownDate - now;
 
-            // Time calculations for days, hours, minutes and seconds
+            // Time calculations for days， hours， minutes and seconds
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -95,7 +104,7 @@
             document.getElementById("demo").innerHTML = hours + "小时 "
                 + minutes + "分 " + seconds + "秒 ";
 
-            // If the count down is finished, write some text 
+            // If the count down is finished， write some text 
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = "已经开始选课。";
