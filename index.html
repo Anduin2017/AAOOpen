@@ -7,39 +7,71 @@
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="padding-top:20px;">
     <div class="container">
-        <div class="header clearfix">
-            <h3 class="text-muted">东北大学教务处 开放信息平台</h3>
-        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar" type="button" data-toggle="collapse"
+                        data-target="#navbar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                    <a class="navbar-brand" href="#">东北大学教务处 服务导航</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://aao.neu.edu.cn/" target="_blank">教务处主页</a></li>
+                        <li class="active"><a href="#">选课平台</a></li>
+                        <li><a href="https://bb.neu.edu.cn" target="_blank">教学资源平台</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" role="button" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown">查询中心<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://aao.qianhao.aiursoft.com/ACTIONQUERYSTUDENTSCORE.APPPROCESS" target="_blank">学生成绩</a></li>
+                                <li><a href="https://aao.qianhao.aiursoft.com/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS" target="_blank">学生课表</a></li>
+                                <li><a href="https://aao.qianhao.aiursoft.com/ACTIONQUERYBASESTUDENTINFO3.APPPROCESS" target="_blank">学业预警</a></li>
+                                <li><a href="https://aao.qianhao.aiursoft.com/ACTIONQUERYEXAMTIMETABLEBYSTUDENT.APPPROCESS" target="_blank">考试日程</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li class="dropdown-header">进入系统</li>
+                                <li><a href="https://aao.qianhao.aiursoft.com/index.jsp" target="_blank">登录</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://219.216.96.234" target="_blank">实验报名中心</a></li>
+                        <li><a href="http://219.216.96.240" target="_blank">成绩单认证</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="jumbotron" style="margin-top:20px;">
-            <h1>选课已经开始..</h1>
-            <p>选课系统已经开启，请立即登录选课。</p>
-            <a class="btn btn-success" href="http://aao.courseselection.aiursoft.com/" target="_blank">开始选课</a>
+            <h1>选课尚未开始</h1>
+            <p>2017级学生的选课活动尚未开始。</p>
             <a href="https://aao.neu.edu.cn" class="btn btn-warning" target="_blank">返回教务处主页</a>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <hr>
-                <h1>致歉</h1>
-                <p>各位东北大学16级同学们：</p>
-                <p>首先向大家抱以最诚挚的歉意，同时感谢大家在维护过程的这段时间的耐心等待以及关注。</p>
-                <p>本周三下午1点，北京时间9月6日 13：00，部分计划数据设置发生错误，导致部分课程无法选择。</p>
-                <p>本周三晚上7点，北京时间9月6日 19：10，我们的部分数据在同步时发生故障，导致选课服务器没有正确进行响应。此时选课服务已经工作在严重不稳定的状态。</p>
-                <p>本周四下午1点，北京时间9月7日 13：00，我们的选课分配负载均衡应当按照Cookie进行真实Web服务器分配。但该过程中，由于错误的配置，产生了超过我们预计的等待队列，导致至少3分钟内学生无法登录选课系统，严重影响了用户体验。</p>
-                <p>虽然教务处的工程师已经在事故发生后第一时间内着手抢修，并且紧急要求各个学院检查教学任务设置，重启服务器并尝试修复部分数据，但不幸的是，大量非正常的选课数据已经发生。我们尝试了一些应急方案，但这些尝试均未成功。</p>
-                <p>我们非常理解广大学生焦急的心情，也在事故发生后最初时间内尝试补救。但效果都不理想。在此期间产生了大量选课数据，服务器工作状态已经变得极度不稳定。</p>
-                <p>在尝试了各种解决方案后，东北大学教务处最后综合考虑，决定<b>将体育（三）选课数据回档至事故发生前的状态，也就是2017年9月6日中午。其它课程数据不变。</b>我们需要向大家说明，数据回档是我们最后的无奈的决定，东北大学教务处对于被迫做出这个艰难的决定深表遗憾。</p>
-                <p>数据回档意味着，自事故发生以来所有体育（三）选课结果、退课结果均无法复原。我们一贯重视学生的在校成绩，也珍视学生对东北大学的热爱。由于此次教务处选课系统以来的罕见事故，给很多同学的学习造成了极大的不便。我们对由此给各位学生带来的烦扰，不便以及损失，再次致以诚挚的歉意。我们更将会认真对待这个事件，深度反省和学习此次事故带来的经验，包括更佳的审核和权限设置，更优化的服务检测，以竭力避免此类事件在未来重演。感谢各位同学对我们的理解与支持。</p>
+            <p>由于2017级军训学生的军训阅兵训练，我们将选课时间已经错开到了9月15日14点整。</p>
+            <div class="col-md-4">
+                <h3>校园网外选课</h3>
+                <p>选课平台现已支持在校外网络进行。你可以在任意地点使用任意已连入Internet的设备进行选课。</p>
+                <p>支持的浏览器列表:</p>
+                <ul>
+                    <li>Microsoft Edge</li>
+                    <li>Mozila Firefox</li>
+                    <li>Internet Explorer 8+</li>
+                    <li>Apple Safari</li>
+                    <li>Opera</li>
+                </ul>
             </div>
             <div class="col-md-4">
-                <h3>所谓的“测试”</h3>
-                <p>教务处在最近没有进行过任何所谓的选课测试，参与任何所谓的选课测试都与教务处无关。这可能是学院对于数据操作的错误。我们仍然在继续调查此事。教务处下达的任何通知都会被已文件的形式在网站上公示。其它信息均不代表东北大学教务处。</p>
-            </div>
-            <div class="col-md-4">
-                <h3>情况说明</h3>
-                <p>针对9月6日晚发生的体育课突然能选的情况，是由于部分学院同步部分数据时发生了故障，导致服务器的数据没有被正确更新。这不是任何所谓的“测试”。</p>
-                <p>选课平台的.neu.edu.cn域名尚未通过审批，因此暂时以aiursoft.com域名解析。目前aiursoft.com域名能够代表教务处官方信息。</p>
+                <h3>何如尽快进入选课系统</h3>
+                <p>在教务处<a href="https://aao.qianhao.aiursoft.com/index.jsp">信息查询平台</a>确认你的用户名和密码。</p>
+                <p>为了避免你的课程被其它人恶意删除，强烈建议将密码<a href="https://aao.qianhao.aiursoft.com/ACTIONCHANGEPASSWORD.APPPROCESS">修改</a>为复杂的强密码。切忌使用学号作密码。</p>
+                <p>我们推荐你使用校园网通道进行选课(不需要登录<a href="https://ipgw.neu.edu.cn">IP网关</a>即可选课)。</p>
+                <p>我们推荐使用Windows 10 和 Microsoft Edge 浏览器。</p>
+                <p>曾有反馈称Google Chrome浏览器可能会无法登录系统，这可能是由于Chrome浏览器对于Cookie处理的原则较不同导致或缓存了不应缓存的数据，但我们尚未确认该故障。</p>
             </div>
             <div class="col-md-4">
                 <h3>联络信息</h3>
@@ -58,18 +90,8 @@
                 <p class="text-danger">
                     警告：该倒计时的值取决于你的设备时间， 仅供参考。
                 </p>
-                <h3>选课系统已经工作于理想稳定状态</h3>
-                <a class="btn btn-success" href="http://aao.courseselection.aiursoft.com/" target="_blank">校园网</a>
-                <a class="btn btn-danger" href="http://202.118.31.212:12583/" target="_blank">非校园网</a>
-                <p class="text-danger">非校园网入口将允许任何连入Internet的设备访问选课系统，以便在校外进行选课。注意：该通道不是安全的连接，仅供测试使用。</p>
-            </div>
-            <div class="col-md-8">
-                <img class="img-responsive" src="Sketch.png">
-                <p>系统压力已经恢复到正常状态.</p>
-            </div>
-            <div class="col-md-12">
-                <h3>针对Chrome浏览器在确认信息时回滚</h3>
-                <p>我们收到了一些反馈， 指出Chrome在登录时会无限回滚， 而其它浏览器却可以登录的问题. 在选课开始时教务处一共有三位学生助理， 他们都成功使用Chrome选到了课程. 我们的测试也没有遇到问题. 总之我们无法重现该故障， 也没有更多线索. 这可能是Chrome对于Cookie处理的原则不同导致的， 但我们仍然无法确认. 我们认为这不影响本次选课的公平性. </p>
+                <a class="btn btn-success" href="http://aao.courseselection.aiursoft.com/" target="_blank">校园网入口</a>
+                <a class="btn btn-danger" href="http://202.118.31.212:12583/" target="_blank">非校园网入口</a>
             </div>
         </div>
         <hr>
@@ -82,10 +104,9 @@
 
     <script src="./bower_components/jquery/dist/jquery.min.js"></script>
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Sep 8, 2017 13:00:00").getTime();
+        var countDownDate = new Date("Sep 15, 2017 14:00:00").getTime();
         var update = function () {
 
             // Get todays date and time
@@ -101,13 +122,13 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = hours + "小时 "
+            document.getElementById("demo").innerHTML = days + "天 " + hours + "小时 "
                 + minutes + "分 " + seconds + "秒 ";
 
             // If the count down is finished， write some text 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "已经开始选课。";
+                document.getElementById("demo").innerHTML = "已经开始。";
             }
         };
         update();
