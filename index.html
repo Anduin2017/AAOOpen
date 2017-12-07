@@ -9,66 +9,50 @@
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <div class="container">
-        
-                    <a class="navbar-brand" href="@Values.WWWServerAddress">选课平台</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-        
-                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-                        </ul>
-                    </div>
-        
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
 
+            <a class="navbar-brand" href="@Values.WWWServerAddress">选课平台</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    
-    <div class="container">
-
-
-
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar" type="button" data-toggle="collapse"
-                        data-target="#navbar">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                    <a class="navbar-brand" href="#">东北大学教务处 服务导航</a>
-                </div>
-                <div class="navbar-collapse collapse" id="navbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="https://aao.neu.edu.cn/" target="_blank">教务处主页</a></li>
-                        <li class="active"><a href="#">选课平台</a></li>
-                        <li><a href="https://bb.neu.edu.cn" target="_blank">教学资源平台</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" role="button" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown">查询中心<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="https://aao.qianhao.aiursoft.com/ACTIONQUERYSTUDENTSCORE.APPPROCESS" target="_blank">学生成绩</a></li>
-                                <li><a href="https://aao.qianhao.aiursoft.com/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS" target="_blank">学生课表</a></li>
-                                <li><a href="https://aao.qianhao.aiursoft.com/ACTIONQUERYBASESTUDENTINFO3.APPPROCESS" target="_blank">学业预警</a></li>
-                                <li><a href="https://aao.qianhao.aiursoft.com/ACTIONQUERYEXAMTIMETABLEBYSTUDENT.APPPROCESS" target="_blank">考试日程</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li class="dropdown-header">进入系统</li>
-                                <li><a href="https://aao.qianhao.aiursoft.com/index.jsp" target="_blank">登录</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="http://219.216.96.234" target="_blank">实验报名中心</a></li>
-                        <li><a href="http://219.216.96.240" target="_blank">成绩单认证</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://aao.neu.edu.cn/">主页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">选课平台</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://bb.neu.edu.cn">教学资源平台</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="@Values.WikiServerAddress" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            查询中心
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="https://aao.qianhao.aiursoft.com/ACTIONQUERYSTUDENTSCORE.APPPROCESS">学生成绩</a>
+                            <a class="dropdown-item" href="https://aao.qianhao.aiursoft.com/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS">学生课表</a>
+                            <a class="dropdown-item" href="https://aao.qianhao.aiursoft.com/ACTIONQUERYBASESTUDENTINFO3.APPPROCESS">学业预警</a>
+                            <a class="dropdown-item" href="https://aao.qianhao.aiursoft.com/ACTIONQUERYEXAMTIMETABLEBYSTUDENT.APPPROCESS">考试日程</a>
+                            <a class="dropdown-item" href="https://aao.qianhao.aiursoft.com/index.jsp">登录</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://219.216.96.234">实验报名中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://zzdy.neu.edu.cn">成绩单认证</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <div class="container">
         <div class="jumbotron" style="margin-top:20px;">
             <h1>选课尚未开始</h1>
             <p>选课活动尚未开始。</p>
@@ -77,16 +61,20 @@
         <div class="row">
             <div class="col-md-4">
                 <h3>针对网络优化的建议</h3>
-                <p>访问<a href="http://tracer.aiursoft.com" target="_blank">这里</a>检查你的网络情况。请保证有小于100ms的延迟和至少400Kb/s的极限速度。</p>
+                <p>访问
+                    <a href="http://tracer.aiursoft.com" target="_blank">这里</a>检查你的网络情况。请保证有小于100ms的延迟和至少400Kb/s的极限速度。</p>
                 <p>将路由器切换到5GHz，或直接将网线连接到校园网接口上。如果可以，我们更推荐在网络中心机房操作。</p>
                 <p>关闭其它占用带宽的程序，尤其是长时间的文件下载。</p>
                 <p class="text-danger">频繁的刷新或使用其它软件进行选课会导致防火墙将请求视为攻击而封禁IP！</p>
             </div>
             <div class="col-md-4">
                 <h3>何如尽快进入选课系统</h3>
-                <p>在教务处<a href="https://aao.qianhao.aiursoft.com/index.jsp">信息查询平台</a>确认你的用户名和密码。</p>
-                <p>为了避免你的课程被其它人恶意删除，强烈建议将密码<a href="https://aao.qianhao.aiursoft.com/ACTIONCHANGEPASSWORD.APPPROCESS">修改</a>为复杂的强密码。切忌使用学号作密码。</p>
-                <p>我们推荐你使用校园网通道进行选课(不需要登录<a href="https://ipgw.neu.edu.cn">IP网关</a>即可选课)。</p>
+                <p>在教务处
+                    <a href="https://aao.qianhao.aiursoft.com/index.jsp">信息查询平台</a>确认你的用户名和密码。</p>
+                <p>为了避免你的课程被其它人恶意删除，强烈建议将密码
+                    <a href="https://aao.qianhao.aiursoft.com/ACTIONCHANGEPASSWORD.APPPROCESS">修改</a>为复杂的强密码。切忌使用学号作密码。</p>
+                <p>我们推荐你使用校园网通道进行选课(不需要登录
+                    <a href="https://ipgw.neu.edu.cn">IP网关</a>即可选课)。</p>
                 <p>我们推荐使用Windows 10 和 Microsoft Edge 或 Mozila Firefox浏览器。</p>
             </div>
             <div class="col-md-4">
@@ -94,7 +82,9 @@
                 <p>针对选课过程中的技术问题，请致函：
                     <a href="mailto:anduin@aiursoft.com">Anduin@aiursoft.com</a>
                 </p>
-                <p>反馈QQ群：<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=7a69e9e3aa26395c9a3aff869e1028248e885b861e6bbb7fdb4a366236105a8f">573338798</a></p>
+                <p>反馈QQ群：
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=7a69e9e3aa26395c9a3aff869e1028248e885b861e6bbb7fdb4a366236105a8f">573338798</a>
+                </p>
                 <p>针对选课内容与教学安排等问题，请联络所在学院教学办。</p>
                 <p>针对选课安排和其它问题，请致电教务处教学管理科：
                     <kdb>024-8368-1251</kdb>
@@ -117,9 +107,6 @@
             <p>东北大学教务处</p>
         </footer>
     </div>
-
-
-
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
