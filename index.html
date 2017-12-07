@@ -4,11 +4,34 @@
     <title>东北大学教务处 - 开放信息平台</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body style="padding-top:20px;">
+<body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <div class="container">
+        
+                    <a class="navbar-brand" href="@Values.WWWServerAddress">选课平台</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                        </ul>
+                    </div>
+        
+                </div>
+            </nav>
+
+
+    
     <div class="container">
+
+
+
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -55,7 +78,7 @@
             <div class="col-md-4">
                 <h3>针对网络优化的建议</h3>
                 <p>访问<a href="http://tracer.aiursoft.com" target="_blank">这里</a>检查你的网络情况。请保证有小于100ms的延迟和至少400Kb/s的极限速度。</p>
-                <p>将路由器切换到5GHz，或直接将网线连接到校园网接口上。</p>
+                <p>将路由器切换到5GHz，或直接将网线连接到校园网接口上。如果可以，我们更推荐在网络中心机房操作。</p>
                 <p>关闭其它占用带宽的程序，尤其是长时间的文件下载。</p>
                 <p class="text-danger">频繁的刷新或使用其它软件进行选课会导致防火墙将请求视为攻击而封禁IP！</p>
             </div>
@@ -97,8 +120,9 @@
 
 
 
-    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Dec 7, 2017 13:00:00").getTime();
