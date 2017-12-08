@@ -9,12 +9,15 @@ swal({
     confirmButtonText: '已修改密码',
     cancelButtonText: '立即修改',
     cancelButtonColor: '#d33',
+    confirmButtonClass: 'btn btn-success',
+    cancelButtonClass: 'btn btn-danger'
 }).then((result) => {
     if (!result.value) {
         swal({
             title: '正在重定向...',
             text: '请在密码修改完成后再登录选课平台。',
             timer: 2000,
+            type:'success',
             onOpen: () => {
                 swal.showLoading()
             }
@@ -22,7 +25,15 @@ swal({
             location.href = "https://aao.qianhao.aiursoft.com/ACTIONCHANGEPASSWORD.APPPROCESS";
         });
     } else {
-
+        swal({
+            title: '',
+            text: '请在密码修改完成后再登录选课平台。',
+            timer: 2000,
+            type:'success',
+            onOpen: () => {
+                swal.showLoading()
+            }
+        })
     }
 })
 var countDownDate = new Date("Dec 7, 2017 13:00:00").getTime();
