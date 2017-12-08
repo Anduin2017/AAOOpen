@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "static -p 5000"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,8 @@
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.9"
+    "node-static": "^0.7.10",
+    "popper.js": "^1.12.9",
+    "sweetalert2": "^7.0.9"
   }
 }

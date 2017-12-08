@@ -31,6 +31,10 @@
 
 body {
     padding-top: 50px;
+   
+}
+.lines{
+    background: url(https://cdn.aiursoft.com/images/simple-codelines.svg),#2b3137;
 }
 .container .text-muted {
     margin: 20px 0;

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/node_modules/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
     <link href="/css/AiurUI.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container">
-
             <a class="navbar-brand" href="@Values.WWWServerAddress">东北大学选课平台</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -50,15 +50,28 @@
                         <a class="nav-link" href="http://zzdy.neu.edu.cn">成绩单认证</a>
                     </li>
                 </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://aao.qianhao.aiursoft.com/ACTIONCHANGEPASSWORD.APPPROCESS">
+                            修改密码
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://aao.qianhao.aiursoft.com/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS">
+                            检查选课结果
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
+
     <div class="container">
         <div class="jumbotron" style="margin-top:-20px;">
             <h1 class="loading">选课开始
-                    <span class="d">.</span>
-                    <span class="d d-2">.</span>
-                    <span class="d d-3">.</span>
+                <span class="d">.</span>
+                <span class="d d-2">.</span>
+                <span class="d d-3">.</span>
             </h1>
             <p>选课活动开始，请在选课前仔细阅读此说明。。</p>
             <a href="https://aao.neu.edu.cn" class="btn btn-success btn-lg" target="_blank">返回教务处主页</a>
@@ -66,20 +79,23 @@
         <div class="row">
             <div class="col">
                 <h3>针对网络优化的建议</h3>
-                <p>访问<a href="http://tracer.aiursoft.com" target="_blank">Tracer</a>检查你的网络情况。请保证有小于100ms的延迟和至少400Kb/s的极限速度。</p>
+                <p>访问
+                    <a href="http://tracer.aiursoft.com" target="_blank">Tracer</a>检查你的网络情况。请保证有小于100ms的延迟和至少400Kb/s的极限速度。</p>
                 <p>将路由器切换到5GHz，或直接将网线连接到校园网接口上。如果可以，我们更推荐在网络中心机房操作。</p>
                 <p>关闭其它占用带宽的程序，尤其是长时间的文件下载。如果问题仍未解决，尝试使用移动网络。</p>
-                <p class="text-danger">频繁的刷新或使用其它软件进行选课会导致防火墙将请求视为攻击而封禁IP！</p>
             </div>
             <div class="col">
-                <h3>如何尽快进入选课系统</h3>
+                <h2>进入系统前</h2>
                 <p>在教务处
                     <a href="https://aao.qianhao.aiursoft.com/index.jsp">信息查询平台</a>确认你的用户名和密码。</p>
-                <p>为了避免你的课程被其它人恶意删除，<b>强烈建议</b>将密码
+                <p>为了避免你的课程被其它人恶意删除，
+                    <b>强烈建议</b>将密码
                     <a href="https://aao.qianhao.aiursoft.com/ACTIONCHANGEPASSWORD.APPPROCESS">修改</a>为复杂的强密码。切忌使用学号作密码。</p>
-                <p>我们推荐你使用校园网通道进行选课(不需要登录
+                <p>推荐使用校园网通道进行选课(不需要登录
                     <a href="https://ipgw.neu.edu.cn">IP网关</a>即可选课)。</p>
-                <p>我们推荐使用Windows 10 和 <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft Edge</a> 或 <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozila Firefox</a>浏览器。</p>
+                <p>推荐使用Windows 10 和
+                    <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft Edge</a> 或
+                    <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozila Firefox</a>浏览器。</p>
             </div>
             <div class="col">
                 <h3>联络信息</h3>
@@ -97,13 +113,14 @@
         </div>
         <div class="row" style="margin-bottom:20px">
             <div class="col">
-                <h3>距离选课开始还有:<code id="demo"></code>
+                <h3>距离选课开始还有:
+                    <code id="demo"></code>
                 </h3>
-                <p class="text-danger">
-                    警告：该倒计时的值取决于你的设备时间， 仅供参考。
-                </p>
-                <a class="btn btn-success" href="http://aao.courseselection.aiursoft.com/" target="_blank">校园网入口</a>
-                <a class="btn btn-danger" href="http://202.118.31.212:12583/" target="_blank">非校园网入口</a>
+                <div class="btn btn-group">
+                    <a class="btn btn-success" href="http://aao.courseselection.aiursoft.com/" target="_blank">校园网入口</a>
+                    <a class="btn btn-danger" href="http://202.118.31.212:12583/" target="_blank">非校园网入口</a>
+                </div>
+                <a class="btn btn-warning" href="http://aao.courseselection.aiursoft.com/XK_Help.htm?Time=1512750652429" target="_blank">选课帮助</a>
             </div>
         </div>
         <div class="row">
@@ -114,47 +131,17 @@
         <div class="container-fluid p-3 p-md-5">
             <ul class="bd-footer-links">
                 <li>东北大学教务处</li>
-                <li><a href="https://github.com/AiursoftWeb/AAOOpen">GitHub</a></li>
+                <li>
+                    <a href="https://github.com/AiursoftWeb/AAOOpen">GitHub</a>
+                </li>
             </ul>
             <p>&copy; 2017</p>
         </div>
     </footer>
+
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        if (location.protocol != 'https:')
-        {
-            location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-        }
-        // Set the date we're counting down to
-        var countDownDate = new Date("Dec 7, 2017 13:00:00").getTime();
-        var update = function () {
-
-            // Get todays date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now an the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days， hours， minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + "天 " + hours + "小时 "
-                + minutes + "分 " + seconds + "秒 ";
-
-            // If the count down is finished， write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "已经开始。";
-            }
-        };
-        update();
-        // Update the count down every 1 second
-        var x = setInterval(update, 1000);
-    </script>
+    <script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="/js/AiurUI.js"></script>
 </body>
