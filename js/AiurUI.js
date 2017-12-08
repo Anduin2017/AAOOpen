@@ -7,7 +7,8 @@ swal({
     type: 'warning',
     showCancelButton: true,
     confirmButtonText: '已修改密码',
-    cancelButtonText: '立即修改'
+    cancelButtonText: '立即修改',
+    cancelButtonColor: '#d33',
 }).then((result) => {
     if (!result.value) {
         swal({
