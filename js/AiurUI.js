@@ -17,7 +17,7 @@ swal({
             title: '正在重定向...',
             text: '请在密码修改完成后再登录选课平台。',
             timer: 2000,
-            type:'success',
+            type: 'success',
             onOpen: () => {
                 swal.showLoading()
             }
@@ -27,9 +27,9 @@ swal({
     } else {
         swal({
             title: '可以开始选课了',
-    showConfirmButton: false,
-    timer: 1300,
-            type:'success'
+            showConfirmButton: false,
+            timer: 1300,
+            type: 'success'
         })
     }
 })
