@@ -1,5 +1,5 @@
 if (location.protocol != 'https:') {
-    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    //location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
 }
 swal({
     title: '课程安全',
@@ -26,13 +26,10 @@ swal({
         });
     } else {
         swal({
-            title: '',
-            text: '请在密码修改完成后再登录选课平台。',
-            timer: 2000,
-            type:'success',
-            onOpen: () => {
-                swal.showLoading()
-            }
+            title: '可以开始选课了',
+    showConfirmButton: false,
+    timer: 1300,
+            type:'success'
         })
     }
 })
