@@ -22,7 +22,7 @@ swal({
                 swal.showLoading()
             }
         }).then(() => {
-            location.href = "https://aao.qianhao.aiursoft.com/ACTIONCHANGEPASSWORD.APPPROCESS";
+            location.href = "https://zhjw.neu.edu.cn/ACTIONCHANGEPASSWORD.APPPROCESS";
         });
     } else {
         swal({
