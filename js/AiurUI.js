@@ -19,7 +19,7 @@ swal({
             timer: 2000,
             type: 'success',
             onOpen: () => {
-                swal.showLoading()
+                swal.showLoading();
             }
         }).then(() => {
             location.href = "https://zhjw.neu.edu.cn/ACTIONCHANGEPASSWORD.APPPROCESS";
