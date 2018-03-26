@@ -1,38 +1,38 @@
 if (location.protocol != 'https:') {
     //location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
 }
-// swal({
-//     title: '课程安全',
-//     text: "请确认你是否使用了与用户名相同的密码。\r\n这有极高的风险可能会导致你的课程被恶意删除。",
-//     type: 'warning',
-//     showCancelButton: true,
-//     confirmButtonText: '已修改密码',
-//     cancelButtonText: '立即修改',
-//     cancelButtonColor: '#d33',
-//     confirmButtonClass: 'btn btn-success',
-//     cancelButtonClass: 'btn btn-danger'
-// }).then((result) => {
-//     if (!result.value) {
-//         swal({
-//             title: '正在重定向...',
-//             text: '请在密码修改完成后再登录选课平台。',
-//             timer: 2000,
-//             type: 'success',
-//             onOpen: () => {
-//                 swal.showLoading();
-//             }
-//         }).then(() => {
-//             location.href = "https://zhjw.neu.edu.cn/ACTIONCHANGEPASSWORD.APPPROCESS";
-//         });
-//     } else {
-//         swal({
-//             title: '可以开始选课了',
-//             showConfirmButton: false,
-//             timer: 1300,
-//             type: 'success'
-//         })
-//     }
-// });
+swal({
+    title: '课程安全',
+    text: "请确认你是否使用了与用户名相同的密码。\r\n这有极高的风险可能会导致你的课程被恶意删除。",
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonText: '已修改密码',
+    cancelButtonText: '立即修改',
+    cancelButtonColor: '#d33',
+    confirmButtonClass: 'btn btn-success',
+    cancelButtonClass: 'btn btn-danger'
+}).then((result) => {
+    if (!result.value) {
+        swal({
+            title: '正在重定向...',
+            text: '请在密码修改完成后再登录选课平台。',
+            timer: 2000,
+            type: 'success',
+            onOpen: () => {
+                swal.showLoading();
+            }
+        }).then(() => {
+            location.href = "https://zhjw.neu.edu.cn/ACTIONCHANGEPASSWORD.APPPROCESS";
+        });
+    } else {
+        swal({
+            title: '可以开始选课了',
+            showConfirmButton: false,
+            timer: 1300,
+            type: 'success'
+        })
+    }
+});
 var countDownDate = new Date("Dec 7, 2017 13:00:00").getTime();
 var update = function () {
     var now = new Date().getTime();
