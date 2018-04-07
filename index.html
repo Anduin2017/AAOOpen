@@ -1,19 +1,20 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>东北大学教务处 - 开放信息平台</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="theme-color" content="#343a40">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+        <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/node_modules/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+        <link href="/css/AiurUI.css" rel="stylesheet">
+    </head>
 
-<head>
-    <title>东北大学教务处 - 开放信息平台</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/node_modules/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
-    <link href="/css/AiurUI.css" rel="stylesheet">
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="@Values.WWWServerAddress">东北大学选课平台</a>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="/">东北大学选课平台</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,9 +24,6 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="https://aao.neu.edu.cn/">主页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">选课平台</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://bb.neu.edu.cn">教学资源平台</a>
@@ -50,7 +48,7 @@
                         <a class="nav-link" href="http://zzdy.neu.edu.cn">成绩单认证</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="https://zhjw.neu.edu.cn/ACTIONCHANGEPASSWORD.APPPROCESS">
                             修改密码
@@ -63,85 +61,87 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="container">
-        <div class="jumbotron" style="margin-top:-20px;">
-            <h1 class="loading">选课平台
-                <span class="d">.</span>
-                <span class="d d-2">.</span>
-                <span class="d d-3">.</span>
-            </h1>
-            <p>选课活动开始，请在选课前仔细阅读此说明。。</p>
-            <a href="https://aao.neu.edu.cn" class="btn btn-success btn-lg" target="_blank">返回教务处主页</a>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h3>针对网络优化的建议</h3>
-                <p>访问
-                    <a href="http://tracer.aiursoft.com" target="_blank">Tracer</a>检查你的网络情况。请保证有小于100ms的延迟和至少400Kb/s的极限速度。</p>
-                <p>将路由器切换到5GHz，或直接将网线连接到校园网接口上。如果可以，我们更推荐在网络中心机房操作。</p>
-                <p>关闭其它占用带宽的程序，尤其是长时间的文件下载。如果问题仍未解决，尝试使用移动网络。</p>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="loading">选课平台
+                    <span class="d">.</span>
+                    <span class="d d-2">.</span>
+                    <span class="d d-3">.</span>
+                </h1>
+                <p>选课活动开始，请在选课前仔细阅读此说明。</p>
+                <a href="https://aao.neu.edu.cn" class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer">返回教务处主页</a>
             </div>
-            <div class="col-md-4">
-                <h2>进入系统前</h2>
-                <p>在教务处
-                    <a href="https://zhjw.neu.edu.cn/index.jsp">信息查询平台</a>确认你的用户名和密码。</p>
-                <p>为了避免你的课程被其它人恶意删除，
-                    <b>强烈建议</b>将密码
-                    <a href="https://zhjw.neu.edu.cn/ACTIONCHANGEPASSWORD.APPPROCESS">修改</a>为复杂的强密码。切忌使用学号作密码。</p>
-                <p>推荐使用校园网通道进行选课(不需要登录
-                    <a href="https://ipgw.neu.edu.cn">IP网关</a>即可选课)。</p>
-                <p>推荐使用Windows 10 和
-                    <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft Edge</a> 或
-                    <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozila Firefox</a>浏览器。</p>
-            </div>
-            <div class="col-md-4">
-                <h3>联络信息</h3>
-                <p>针对选课过程中的技术问题，请致函：
-                    <a href="mailto:anduin@aiursoft.com">Anduin@aiursoft.com</a>
-                </p>
-                <p>问题讨论、反馈QQ群：
-                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=7a69e9e3aa26395c9a3aff869e1028248e885b861e6bbb7fdb4a366236105a8f">573338798</a>
-                </p>
-                <p>针对选课内容与教学安排等问题，请联络所在学院教学办。</p>
-                <p>针对选课安排和其它问题，请致电教务处教学管理科：
-                    <kdb>024-8368-1251</kdb>
-                </p>
-            </div>
-        </div>
-        <div class="row" style="margin-bottom:20px">
-            <div class="col">
-                <h3>距离选课开始还有:
-                    <code id="demo"></code>
-                </h3>
-                <div class="btn btn-group">
-                    <a class="btn btn-success" href="http://aao.courseselection.aiursoft.com/" target="_blank">校园网入口</a>
-                    <a class="btn btn-danger" href="http://bb.neu.edu.cn:12306/" target="_blank">非校园网入口</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>针对网络优化的建议</h3>
+                    <p>访问
+                        <a href="http://tracer.aiursoft.com" target="_blank" rel="noopener noreferrer">Tracer</a>检查你的网络情况。请保证有小于100ms的延迟和至少400Kb/s的极限速度。</p>
+                    <p>将路由器切换到5GHz，或直接将网线连接到校园网接口上。如果可以，我们更推荐在网络中心机房操作。</p>
+                    <p>关闭其它占用带宽的程序，尤其是长时间的文件下载。如果问题仍未解决，尝试使用移动网络。</p>
                 </div>
-                <a class="btn btn-warning" href="http://aao.courseselection.aiursoft.com/XK_Help.htm?Time=1512750652429" target="_blank">选课帮助</a>
+                <div class="col-md-4">
+                    <h2>进入系统前</h2>
+                    <p>在教务处
+                        <a href="https://zhjw.neu.edu.cn/index.jsp">信息查询平台</a>确认你的用户名和密码。</p>
+                    <p>为了避免你的课程被其它人恶意删除，
+                        <b>强烈建议</b>将密码
+                        <a href="https://zhjw.neu.edu.cn/ACTIONCHANGEPASSWORD.APPPROCESS">修改</a>为复杂的强密码。切忌使用学号作密码。</p>
+                    <p>推荐使用校园网通道进行选课(不需要登录
+                        <a href="https://ipgw.neu.edu.cn">IP网关</a>即可选课)。</p>
+                    <p>推荐使用Windows 10 和
+                        <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank" rel="noopener noreferrer">Microsoft Edge</a> 或
+                        <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" rel="noopener noreferrer">Mozila Firefox</a>浏览器。</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>联络信息</h3>
+                    <p>针对选课过程中的技术问题，请致函：
+                        <a href="mailto:anduin@aiursoft.com">Anduin@aiursoft.com</a>
+                    </p>
+                    <p>问题讨论、反馈QQ群：
+                        <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=7a69e9e3aa26395c9a3aff869e1028248e885b861e6bbb7fdb4a366236105a8f" rel="noopener noreferrer">573338798</a>
+                    </p>
+                    <p>针对选课内容与教学安排等问题，请联络所在学院教学办。</p>
+                    <p>针对选课安排和其它问题，请致电教务处教学管理科：
+                        <kdb>024-8368-1251</kdb>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:20px">
+                <div class="col">
+                    <h3>距离选课开始还有:
+                        <code id="demo"></code>
+                    </h3>
+                    <div class="btn btn-group">
+                        <a class="btn btn-success" href="http://aao.courseselection.aiursoft.com/" target="_blank" rel="noopener noreferrer">校园网入口</a>
+                        <a class="btn btn-danger" href="http://bb.neu.edu.cn:12306/" target="_blank" rel="noopener noreferrer">非校园网入口</a>
+                    </div>
+                    <div class="btn btn-group">
+                        <a class="btn btn-warning" href="http://aao.courseselection.aiursoft.com/XK_Help.htm?Time=1512750652429" target="_blank" rel="noopener noreferrer">选课帮助</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
             </div>
         </div>
-        <div class="row">
+        <footer class="bd-footer text-muted">
+            <div class="container-fluid p-3 p-md-5">
+                <ul class="bd-footer-links">
+                    <li>东北大学教务处</li>
+                    <li>
+                        <a href="https://github.com/AiursoftWeb/AAOOpen" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                </ul>
+                <p>&copy; 2018</p>
+            </div>
+        </footer>
 
-        </div>
-    </div>
-    <footer class="bd-footer text-muted">
-        <div class="container-fluid p-3 p-md-5">
-            <ul class="bd-footer-links">
-                <li>东北大学教务处</li>
-                <li>
-                    <a href="https://github.com/AiursoftWeb/AAOOpen">GitHub</a>
-                </li>
-            </ul>
-            <p>&copy; 2017</p>
-        </div>
-    </footer>
-
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="/js/AiurUI.js?version=asdf"></script>
-</body>
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+        <script src="/js/AiurUI.js?version=asdf"></script>
+    </body>
+</html>

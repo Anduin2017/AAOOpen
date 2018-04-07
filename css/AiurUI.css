@@ -30,15 +30,12 @@
   }
 
 body {
-    padding-top: 50px;
-   
+    margin-top: 70px;
 }
 .lines{
     background: url(https://cdn.aiursoft.com/images/simple-codelines.svg),#2b3137;
 }
-.container .text-muted {
-    margin: 20px 0;
-}
+
 .bd-footer {
     font-size: 85%;
     text-align: center;
