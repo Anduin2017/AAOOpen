@@ -36,7 +36,7 @@ var update = function () {
     var distance = countDownDate - now;
     if (distance < 0) {
         clearInterval(x);
-        $("#started").html("选课已经开始");
+        document.getElementById("started").textContent = "选课已经开始";
         return;
     }
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
