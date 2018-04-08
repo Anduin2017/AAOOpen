@@ -1,6 +1,3 @@
-if (location.protocol != 'https:') {
-    //location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-}
 swal({
     title: '课程安全',
     text: "请确认你是否使用了与用户名相同的密码。\r\n这有极高的风险可能会导致你的课程被恶意删除。",
@@ -37,23 +34,24 @@ var countDownDate = new Date("Dec 7, 2017 13:00:00").getTime();
 var update = function () {
     var now = new Date().getTime();
     var distance = countDownDate - now;
+    if (distance < 0) {
+        clearInterval(x);
+        $("#started").html("选课已经开始");
+        return;
+    }
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     document.getElementById("demo").innerHTML = days + "天 " + hours + "小时 "
         + minutes + "分 " + seconds + "秒 ";
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "已经开始。";
-    }
 };
 update();
 var x = setInterval(update, 1000);
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/js/sw.js').then(function(registration) {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
         // Registration was successful
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
       }, function(err) {
