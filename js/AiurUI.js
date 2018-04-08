@@ -36,15 +36,15 @@ var update = function () {
     var distance = countDownDate - now;
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("started").textContent = "选课已经开始";
+        $("#started").html("选课已经开始");
         return;
     }
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("demo").innerHTML = days + "天 " + hours + "小时 "
-        + minutes + "分 " + seconds + "秒 ";
+    $("#demo").html(days + "天 " + hours + "小时 "
+        + minutes + "分 " + seconds + "秒 ");
 };
 update();
 var x = setInterval(update, 1000);
