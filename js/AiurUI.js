@@ -30,7 +30,7 @@ swal({
         })
     }
 });
-var countDownDate = new Date("Dec 7, 2018 13:00:00").getTime();
+var countDownDate = new Date("Jul 11, 2018 13:00:00").getTime();
 var update = function () {
     var now = new Date().getTime();
     var distance = countDownDate - now;
