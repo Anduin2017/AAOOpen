@@ -3,7 +3,7 @@ swal({
     text: "请确认你是否使用了与用户名相同的密码。\r\n这有极高的风险可能会导致你的课程被恶意删除。",
     type: 'warning',
     showCancelButton: true,
-    confirmButtonText: '已修改密码',
+    confirmButtonText: '已确认密码',
     cancelButtonText: '立即修改',
     cancelButtonColor: '#d33',
     confirmButtonClass: 'btn btn-success',
@@ -30,7 +30,7 @@ swal({
         })
     }
 });
-var countDownDate = new Date("Jul 11, 2018 13:00:00").getTime();
+var countDownDate = new Date("2018-09-11 13:00:00").getTime();
 var update = function () {
     var now = new Date().getTime();
     var distance = countDownDate - now;
