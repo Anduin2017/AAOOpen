@@ -29,9 +29,6 @@
     animation-delay: .8s
   }
 
-body {
-    margin-top: 70px;
-}
 .lines{
     background: url(https://cdn.aiursoft.com/images/simple-codelines.svg),#2b3137;
 }
