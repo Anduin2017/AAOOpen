@@ -7,7 +7,8 @@ swal({
     cancelButtonText: '立即修改',
     cancelButtonColor: '#d33',
     confirmButtonClass: 'btn btn-success',
-    cancelButtonClass: 'btn btn-danger'
+    cancelButtonClass: 'btn btn-danger',
+    footer: '<a href="https://zhjw.neu.edu.cn/index.jsp" target="_blank">前往确认</a>'
 }).then((result) => {
     if (!result.value) {
         swal({
